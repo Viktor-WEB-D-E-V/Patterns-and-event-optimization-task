@@ -50,7 +50,9 @@ function createMarkup(gallery, galleryItems) {
     .join("");
 
   console.log(gallery);
-  gallery.insertAdjacentHTML("beforebegin", markup);
+  gallery.insertAdjacentHTML("afterbegin", markup);
 }
 
-console.log(createMarkup(gallery, galleryItems));
+createMarkup(gallery, galleryItems);
+console.dir(basicLightbox);
+
